@@ -12,18 +12,3 @@ Most quadcopters have 4 motors to provide thrust, although some other models wit
 But it also comes at a price–the high complexity of controlling such an aircraft makes it almost impossible to manually control each individual motor's thrust. So, most commercial quadcopters try to simplify the flying controls by accepting a single thrust magnitude and yaw/pitch/roll controls, making it much more intuitive and fun.
 
 The next step in this evolution is to enable quadcopters to autonomously achieve desired control behaviors such as takeoff and landing. You could design these controls with a classic approach (say, by implementing PID controllers). Or, you can use reinforcement learning to build agents that can learn these behaviors on their own. This is what you are going to do in this project!
-
-Project Instructions
-Clone the repository and navigate to the downloaded folder.
-git clone https://github.com/udacity/RL-Quadcopter-2.git
-cd RL-Quadcopter-2
-Create and activate a new environment.
-conda create -n quadcop python=3.6 matplotlib numpy pandas
-source activate quadcop
-Create an IPython kernel for the quadcop environment.
-python -m ipykernel install --user --name quadcop --display-name "quadcop"
-Open the notebook.
-jupyter notebook Quadcopter_Project.ipynb
-Before running code, change the kernel to match the quadcop environment by using the drop-down menu (Kernel > Change kernel > quadcop). Then, follow the instructions in the notebook.
-
-You will likely need to install more pip packages to complete this project. Please curate the list of packages needed to run your project in the requirements.txt file in the repository.
